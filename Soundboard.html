@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" manifest="Soundboard.appcache">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+       function play(soundfile){
+            var audio = document.getElementById(soundfile);
+            audio.play();
+            }
+    </script>
+    <audio id="LeftLane" src="LeftLane.mp3"></audio>
+    <audio id="Overtake" src="Overtake.mp3"></audio>
+    <audio id="Problem" src="Problem.mp3"></audio>
+    <audio id="RightLane" src="RightLane.mp3"></audio>
+    <audio id="TurnLeft" src="TurnLeft.mp3"></audio>
+    <audio id="TurnRight" src="TurnRight.mp3"></audio>
+    <audio id="Stop" src="Stop.mp3"></audio>
+
+    <table>
+        <tr>
+            <td>
+                <img src="LeftLane.jpg" alt="LeftLane" onclick="play('LeftLane')">
+            </td>
+            <td>
+                <img src="RightLane.jpg" alt="RightLane" onclick="play('RightLane')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="TurnLeft.jpg" alt="TurnLeft" onclick="play('TurnLeft')">
+            </td>
+            <td>
+                <img src="TurnRight.jpg" alt="TurnRight" onclick="play('TurnRight')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Overtake.jpg" alt="Overtake" onclick="play('Overtake')">
+            </td>
+            <td>
+                <img src="Stop.jpg" alt="Stop" onclick="play('Stop')">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img src="Problem.jpg" alt="Problem" onclick="play('Problem')">
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
+
